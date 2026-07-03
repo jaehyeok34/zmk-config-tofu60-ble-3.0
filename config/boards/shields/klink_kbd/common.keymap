@@ -49,13 +49,6 @@
                     , <&macro_release &kp LCTRL>;
         )
 
-        ZMK_MACRO(ctrl_m_l,
-            bindings = <&macro_press &kp LCTRL>
-                    , <&macro_tap &kp M>
-                    , <&macro_tap &kp L>
-                    , <&macro_release &kp LCTRL>;
-        )
-
         ZMK_MACRO(private,
             bindings = <&kp HASH &kp N6 &kp B &kp N3 &kp F &kp A &kp N0>
         )

@@ -22,8 +22,8 @@
         layer1 {
             bindings = <
     &kp GRAVE  &kp F1    &kp F2    &kp F3  &kp F4   &kp F5  &kp F6  &kp F7  &kp F8   &kp F9   &kp F10  &kp F11 &kp F12  &kp INS  &kp DELETE
-    &kp CAPS &kp LA(LEFT)    &kp LA(RIGHT)    &kp LC(LG(LEFT))  &kp LC(LG(RIGHT))   &none  &none  &none  &none  &none  &none  &none  &none  &kp RSHIFT 
-    &none   &none  &kp LS(LA(DOT))  &kp F12  &none  &none  &none  &none  &none  &none  &none  &none   &kp RET 
+    &kp CAPS &kp LA(LEFT)    &kp LA(RIGHT)    &kp LC(LG(LEFT))  &kp LC(LG(RIGHT))   &ctrl_k_z  &none  &none  &none  &none  &none  &private  &netcus  &kp RSHIFT 
+    &none   &ctrl_k_e  &kp LS(LA(DOT))  &kp F12  &ctrl_m_m  &ctrl_m_l  &none  &none  &none  &none  &none  &none   &kp RET 
     &kp LSHFT &none  &kp LS(LG(LEFT))    &kp LC(LS(F9))    &kp LS(F7)  &kp LG(TAB) &none  &none  &none  &none  &none   &none   &kp PAGE_UP  &kp END
     &none  &kp LCTRL   &kp LALT                            &kp RALT                                   &none    &kp HOME      &kp PAGE_DOWN   &none
             >;

@@ -50,11 +50,11 @@
         )
 
         ZMK_MACRO(private,
-            bindings = <&kp HASH &kp N6 &kp B &kp N3 &kp F &kp A &kp N0>
+            bindings = <&kp HASH &kp N6 &kp B &kp N3 &kp F &kp A &kp N0>;
         )
 
         ZMK_MACRO(netcus,
-            bindings = <&kp LS(N) &kp E &kp T &kp C &kp U &kp S>
+            bindings = <&kp LS(N) &kp E &kp T &kp C &kp U &kp S>;
         )
 
         //output ~ with RShift

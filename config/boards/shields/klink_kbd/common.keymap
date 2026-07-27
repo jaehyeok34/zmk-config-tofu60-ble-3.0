@@ -132,10 +132,22 @@
         ZMK_MACRO(zmk_reserved_bt_clear_0, bindings = <&bt BT_SEL 0>, <&bt BT_CLR>, <&kp SHOW_LED>;)
         ZMK_MACRO(zmk_reserved_bt_clear_1, bindings = <&bt BT_SEL 1>, <&bt BT_CLR>, <&kp SHOW_LED>;)
         ZMK_MACRO(zmk_reserved_bt_clear_2, bindings = <&bt BT_SEL 2>, <&bt BT_CLR>, <&kp SHOW_LED>;)
+
+        ZMK_MACRO(zmk_reserved_bt_clear_all, bindings = <&bt BT_CLR_ALL>, <&kp SHOW_LED>;)
+
         ZMK_MACRO(zmk_reserved_bt_conn_0,  bindings = <&out OUT_BLE>, <&bt BT_SEL 0>, <&kp SHOW_LED>;)
         ZMK_MACRO(zmk_reserved_bt_conn_1,  bindings = <&out OUT_BLE>, <&bt BT_SEL 1>, <&kp SHOW_LED>;)
         ZMK_MACRO(zmk_reserved_bt_conn_2,  bindings = <&out OUT_BLE>, <&bt BT_SEL 2>, <&kp SHOW_LED>;)
 
+        bt_clear_all: bt_clear_all {
+            compatible = "zmk,behavior-hold-tap";
+            display-name = "BT Clear All";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <1000>;
+            bindings = <&zmk_reserved_bt_clear_all>, <&none>;
+        };
+    
         device_bt1: device_bt1 {
             compatible = "zmk,behavior-hold-tap";
             display-name = "Device_BT1";

@@ -4,6 +4,7 @@
 #define UF_BT1 device_bt1 0 0
 #define UF_BT2 device_bt2 0 1
 #define UF_BT3 device_bt3 0 2
+#define BT_RESET bt_clear_all 0 3
 
 / {
     keymap {
@@ -32,7 +33,7 @@
         layer2 {
             bindings = <
     &kp ESC  &kp F1    &kp F2    &kp F3  &kp F4   &kp F5  &kp F6  &kp F7  &kp F8   &kp F9   &kp F10  &kp F11 &kp F12  &kp INS  &kp DELETE
-    &none &UF_BT1    &UF_BT2    &UF_BT3  &none   &none  &none  &none  &none  &none  &none  &kp LS(COMMA)  &kp LS(DOT)  &none 
+    &none &UF_BT1    &UF_BT2    &UF_BT3  &BT_RESET   &none  &none  &none  &none  &none  &none  &kp LS(COMMA)  &kp LS(DOT)  &none 
     &none   &none  &none  &none  &none  &none  &none  &none  &none  &kp C_MUTE  &kp C_VOLUME_DOWN     &kp C_VOL_UP &none 
     &none &none  &none    &none    &none  &none &bootloader  &none  &none  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC   &none   &none &none
     &none  &none   &none                            &Device_USB                                   &none    &none     &none   &none
